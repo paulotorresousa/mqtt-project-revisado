@@ -11,21 +11,6 @@ Subscriber MQTT: Utiliza mosquitto_sub ou scripts personalizados para assinar t�
 
 O projeto é executado via Docker Compose, simplificando o setup e o deploy.
 
-# 🗂️ Estrutura do Repositório
-/
-├── mosquitto/config
-│   ├── mosquitto.conf      # Configuração do Mosquitto
-│   ├── passwd              # Usuários e senhas
-│   └── acl                 # Controle de acesso por tópico
-├── src/
-│   └── temperature-sensor-1.py        # Código do sensor
-├── data/
-│   └── mosquitto.data          # para persistir
-├── log/
-│   └── mosquitto.log           # gerar logs
-├── Dockerfile.temperature-sensor-1
-├── docker-compose.yml
-└── README.md
 
 # ⚙️ Como Executar
 1. Clonar o repositório
