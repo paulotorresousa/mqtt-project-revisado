@@ -43,10 +43,10 @@ services:
     environment:
       BROKER_PORT: "8883"
       BROKER_TLS: "true"
-      BROKER_USERNAME: "oi"   # pode manter auth mesmo sem TLS
-      BROKER_PASSWORD: "1234"
+      BROKER_USERNAME: "USER"   # pode manter auth mesmo sem TLS
+      BROKER_PASSWORD: "SENHA"
     command: >
-      sh -c "mosquitto_sub -h mqtt-broker -p 8883 --cafile /mosquitto/certs/ca.crt -t sensor/# -v --tls-version tlsv1.2 -u oi -P 1234"
+      sh -c "mosquitto_sub -h mqtt-broker -p 8883 --cafile /mosquitto/certs/ca.crt -t sensor/# -v --tls-version tlsv1.2 -u USER -P SENHA"
     volumes:
       - ./mosquitto/certs:/mosquitto/certs
     networks:
