@@ -1,16 +1,55 @@
-# Projeto MQTT (Broker + Sensor + Subscriber) COM SEGURANÇA APLICADA
+# 🛰️ Projeto MQTT Revisado
+📌 Descrição
 
-## Serviços
-- **mqtt-broker** (Eclipse Mosquitto 2.0.20), com persistência e logs.
-- **temperature-sensor-1** (Python 3.12 + Paho MQTT), publica temperatura a cada 5s.
-- **mqtt-subscriber** (mosquitto_sub), assina `sensor/#` e mostra mensagens no log.
+Este projeto demonstra uma arquitetura de comunicação MQTT segura, composta por:
 
-## Uso
-```bash
+Broker MQTT: Eclipse Mosquitto 2.0.20, configurado com TLS, controle de acesso (ACL) e autenticação via password_file.
+
+Sensor de Temperatura: Implementado em Python 3.12 com Paho MQTT, publicando dados de temperatura a cada 5 segundos.
+
+Subscriber MQTT: Utiliza mosquitto_sub ou scripts personalizados para assinar tópicos e visualizar as mensagens recebidas.
+
+O projeto é executado via Docker Compose, simplificando o setup e o deploy.
+
+# 🗂️ Estrutura do Repositório
+/
+├── mosquitto/config
+│   ├── mosquitto.conf      # Configuração do Mosquitto
+│   ├── passwd              # Usuários e senhas
+│   └── acl                 # Controle de acesso por tópico
+├── src/
+│   └── temperature-sensor-1.py        # Código do sensor
+├── data/
+│   └── mosquitto.data          # para persistir
+├── log/
+│   └── mosquitto.log           # gerar logs
+├── Dockerfile.temperature-sensor-1
+├── docker-compose.yml
+└── README.md
+
+# ⚙️ Como Executar
+1. Clonar o repositório
+git clone https://github.com/paulotorresousa/mqtt-project-revisado.git
+cd mqtt-project-revisado
+
+2. Iniciar os containers
 docker compose up -d --build
-docker compose logs -f mqtt-subscriber
-```
 
-## Notas
-- Porta 1883 exposta no host. Se não precisar, remova `ports` do broker.
-- `allow_anonymous true` apenas para laboratório. Em produção, configure `password_file`, `acl_file` e TLS.
+3. Visualizar logs do subscriber
+docker compose logs -f mqtt-subscriber
+
+
+Para a comunicação segura, o subscriber devem usar o certificado TLS do broker e fornecer usuário/senha válidos.
+
+# 🔐 Segurança
+
+Autenticação: Apenas clientes com credenciais válidas no password_file podem se conectar ao broker.
+
+Controle de acesso (ACL): Cada usuário tem permissões específicas para publicar/assinar tópicos.
+
+TLS/SSL: Toda comunicação entre clientes e broker é criptografada, garantindo segurança de dados em trânsito.
+
+Sem acesso anônimo: allow_anonymous está desativado.
+
+Essas medidas tornam o broker seguro para testes avançados ou pequenos ambientes de produção.
+
