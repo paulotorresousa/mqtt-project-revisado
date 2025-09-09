@@ -1,4 +1,4 @@
-# Projeto MQTT (Broker + Sensor + Subscriber)
+# Projeto MQTT (Broker + Sensor + Subscriber) COM SEGURANÇA APLICADA
 
 ## Serviços
 - **mqtt-broker** (Eclipse Mosquitto 2.0.20), com persistência e logs.
