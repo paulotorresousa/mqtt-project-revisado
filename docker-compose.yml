@@ -1,15 +1,17 @@
-version: '3.8'
-
 services:
   mqtt-broker:
     image: eclipse-mosquitto:2.0.20
     container_name: mqtt-broker
     ports:
-      - "1883:1883"
+      - "1883:1883"   # Porta normal (sem TLS) para o sensor
+      - "8883:8883"   # Porta TLS para o subscriber
     volumes:
-      - ./mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
-      - mosquitto_data:/mosquitto/data
-      - mosquitto_log:/mosquitto/log
+      - ./mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - ./mosquitto/config/passwordfile:/mosquitto/config/passwordfile
+      - ./mosquitto/config/aclfile:/mosquitto/config/aclfile 
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+      - ./mosquitto/certs:/mosquitto/certs
     restart: unless-stopped
     networks:
       - mqtt_network
@@ -23,7 +25,8 @@ services:
       - mqtt-broker
     environment:
       BROKER_HOST: mqtt-broker
-      BROKER_PORT: "1883"
+      BROKER_PORT: "1883"       # Sensor usa SEM TLS
+      BROKER_TLS: "false"
       TOPIC: sensor/temperature
       INTERVAL_SECONDS: "5"
       QOS: "0"
@@ -37,8 +40,15 @@ services:
     container_name: mqtt-subscriber
     depends_on:
       - mqtt-broker
+    environment:
+      BROKER_PORT: "8883"
+      BROKER_TLS: "true"
+      BROKER_USERNAME: "oi"   # pode manter auth mesmo sem TLS
+      BROKER_PASSWORD: "1234"
     command: >
-      sh -c "mosquitto_sub -h mqtt-broker -t sensor/# -v"
+      sh -c "mosquitto_sub -h mqtt-broker -p 8883 --cafile /mosquitto/certs/ca.crt -t sensor/# -v --tls-version tlsv1.2 -u oi -P 1234"
+    volumes:
+      - ./mosquitto/certs:/mosquitto/certs
     networks:
       - mqtt_network
     restart: unless-stopped
@@ -47,7 +57,3 @@ networks:
   mqtt_network:
     name: mqtt_network
     driver: bridge
-
-volumes:
-  mosquitto_data:
-  mosquitto_log:

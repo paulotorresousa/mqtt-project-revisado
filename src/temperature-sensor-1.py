@@ -4,8 +4,12 @@ import time
 import signal
 import paho.mqtt.client as mqtt
 
-BROKER_HOST = os.getenv("BROKER_HOST", "mqtt-broker")
-BROKER_PORT = int(os.getenv("BROKER_PORT", "1883"))
+BROKER_HOST     = os.getenv("BROKER_HOST", "mqtt-broker")
+BROKER_PORT     = int(os.getenv("BROKER_PORT", "1883"))
+BROKER_TLS      = os.getenv("BROKER_TLS", "false").lower() == "true"
+BROKER_USERNAME = os.getenv("BROKER_USERNAME")
+BROKER_PASSWORD = os.getenv("BROKER_PASSWORD")
+
 TOPIC       = os.getenv("TOPIC", "sensor/temperature")
 INTERVAL    = float(os.getenv("INTERVAL_SECONDS", "5"))
 QOS         = int(os.getenv("QOS", "0"))
@@ -25,10 +29,20 @@ def on_disconnect(client, userdata, rc, properties=None):
     print(f"[sensor] Disconnected rc={rc}", flush=True)
 
 def main():
-    client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
+    # CRITICO: criar cliente com protocolo correto (MQTT v3.1.1 é estável)
+    client = mqtt.Client(protocol=mqtt.MQTTv311)
     client.on_connect = on_connect
     client.on_disconnect = on_disconnect
     client.reconnect_delay_set(min_delay=1, max_delay=30)
+
+    # autenticação (somente se fornecida)
+    if BROKER_USERNAME and BROKER_PASSWORD:
+        client.username_pw_set(BROKER_USERNAME, BROKER_PASSWORD)
+
+    # TLS (se necessário)
+    if BROKER_TLS:
+        client.tls_set(ca_certs="/mosquitto/certs/ca.crt")
+
     client.connect(BROKER_HOST, BROKER_PORT, keepalive=30)
     client.loop_start()
 

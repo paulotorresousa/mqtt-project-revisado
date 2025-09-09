@@ -1,0 +1,328 @@
+1757423765: mosquitto version 2.0.20 starting
+1757423765: Config loaded from /mosquitto/config/mosquitto.conf.
+1757423765: Opening ipv4 listen socket on port 1883.
+1757423765: mosquitto version 2.0.20 running
+1757423766: New connection from 172.18.0.3:60561 on port 1883.
+1757423766: New client connected from 172.18.0.3:60561 as auto-723E3C04-D740-AB27-64D3-73EB5FF91A7B (p2, c1, k30).
+1757423812: New connection from 172.18.0.4:40866 on port 1883.
+1757423812: New client connected from 172.18.0.4:40866 as auto-C3C9EA34-5A0E-D768-E263-1D93CEC2207E (p2, c1, k60).
+1757424049: Client auto-C3C9EA34-5A0E-D768-E263-1D93CEC2207E disconnected.
+1757424051: Client auto-723E3C04-D740-AB27-64D3-73EB5FF91A7B disconnected.
+1757424052: mosquitto version 2.0.20 terminating
+1757424052: Saving in-memory database to /mosquitto/data/mosquitto.data/mosquitto.db.
+1757424052: Error saving in-memory database, unable to open /mosquitto/data/mosquitto.data/mosquitto.db.new for writing.
+1757424052: Error: No such file or directory.
+1757424060: mosquitto version 2.0.20 starting
+1757424060: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424060: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424060: Error opening password file "/mosquitto/config/passwordfile".
+1757424062: mosquitto version 2.0.20 starting
+1757424062: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424062: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424062: Error opening password file "/mosquitto/config/passwordfile".
+1757424063: mosquitto version 2.0.20 starting
+1757424063: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424063: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424063: Error opening password file "/mosquitto/config/passwordfile".
+1757424065: mosquitto version 2.0.20 starting
+1757424065: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424065: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424065: Error opening password file "/mosquitto/config/passwordfile".
+1757424066: mosquitto version 2.0.20 starting
+1757424066: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424066: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424066: Error opening password file "/mosquitto/config/passwordfile".
+1757424068: mosquitto version 2.0.20 starting
+1757424068: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424068: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424068: Error opening password file "/mosquitto/config/passwordfile".
+1757424072: mosquitto version 2.0.20 starting
+1757424072: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424072: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424072: Error opening password file "/mosquitto/config/passwordfile".
+1757424079: mosquitto version 2.0.20 starting
+1757424079: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424079: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424079: Error opening password file "/mosquitto/config/passwordfile".
+1757424093: mosquitto version 2.0.20 starting
+1757424093: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424093: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424093: Error opening password file "/mosquitto/config/passwordfile".
+1757424119: mosquitto version 2.0.20 starting
+1757424119: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424119: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424119: Error opening password file "/mosquitto/config/passwordfile".
+1757424170: mosquitto version 2.0.20 starting
+1757424170: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424170: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424170: Error opening password file "/mosquitto/config/passwordfile".
+1757424190: mosquitto version 2.0.20 starting
+1757424190: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424190: Opening ipv4 listen socket on port 1883.
+1757424190: mosquitto version 2.0.20 running
+1757424190: New connection from 172.18.0.3:41054 on port 1883.
+1757424190: Client auto-7CE6DD47-8DB3-813A-42C7-0296010B0BBE disconnected, not authorised.
+1757424191: New connection from 172.18.0.4:39035 on port 1883.
+1757424191: Client auto-90A1D07C-A586-D473-9D3C-105C4AFC0B34 disconnected, not authorised.
+1757424191: New connection from 172.18.0.3:41060 on port 1883.
+1757424191: Client auto-43062B08-A520-4059-9F47-873498D93CD4 disconnected, not authorised.
+1757424192: New connection from 172.18.0.4:54380 on port 1883.
+1757424192: Client auto-13AEA251-538C-FA98-2DBC-73225D3176BA disconnected, not authorised.
+1757424192: New connection from 172.18.0.3:41563 on port 1883.
+1757424192: Client auto-DA772B7B-9CE1-9F14-FBD7-9ADCA93424EE disconnected, not authorised.
+1757424193: New connection from 172.18.0.4:54392 on port 1883.
+1757424193: Client auto-3182E194-262C-0CBC-6476-1858095FF3FC disconnected, not authorised.
+1757424194: New connection from 192.168.163.1:37904 on port 1883.
+1757424194: New client connected from 192.168.163.1:37904 as mqtt-explorer-c06c1f27 (p2, c1, k60, u'oi').
+1757424194: New connection from 172.18.0.4:54398 on port 1883.
+1757424194: Client auto-682D7C93-EBEE-B2F1-0DDA-F2253802F9AB disconnected, not authorised.
+1757424196: New connection from 172.18.0.4:42706 on port 1883.
+1757424196: Client auto-2A06DB08-DBD4-D3D7-61BA-33985DE310FD disconnected, not authorised.
+1757424200: New connection from 172.18.0.4:42712 on port 1883.
+1757424200: Client auto-CF8B0535-155A-3652-0E41-3ED098D773AA disconnected, not authorised.
+1757424207: New connection from 172.18.0.4:54034 on port 1883.
+1757424207: Client auto-CA3C358B-9DAB-B35F-AB53-8B5795A5AA61 disconnected, not authorised.
+1757424220: New connection from 172.18.0.4:38806 on port 1883.
+1757424220: Client auto-0DCB7827-DA53-6AC3-E8CD-0F581E2613B8 disconnected, not authorised.
+1757424246: New connection from 172.18.0.4:44104 on port 1883.
+1757424246: Client auto-1D5E9BC4-97AC-801B-8EE1-C860BBAFBB94 disconnected, not authorised.
+1757424298: New connection from 172.18.0.4:44920 on port 1883.
+1757424298: Client auto-D32AC1F0-ABE8-148A-11E3-F1ADDD7E0F95 disconnected, not authorised.
+1757424358: New connection from 172.18.0.4:36698 on port 1883.
+1757424358: Client auto-CB15892C-3BD5-8EB8-B403-B28136872E67 disconnected, not authorised.
+1757424419: New connection from 172.18.0.4:51908 on port 1883.
+1757424419: Client auto-CB4201BF-A27F-82DE-5C6B-4C81F320961A disconnected, not authorised.
+1757424479: New connection from 172.18.0.4:43292 on port 1883.
+1757424479: Client auto-138E9EF1-3A2D-750D-8792-B6984852DA1C disconnected, not authorised.
+1757424539: New connection from 172.18.0.4:56430 on port 1883.
+1757424539: Client auto-0933FFCE-0F5D-FAA5-1058-BE41BA5DE20F disconnected, not authorised.
+1757424600: New connection from 172.18.0.4:41030 on port 1883.
+1757424600: Client auto-FF310CB7-119A-1D84-6A9D-74A98460E140 disconnected, not authorised.
+1757424660: New connection from 172.18.0.4:34738 on port 1883.
+1757424660: Client auto-823CCB7F-06C8-3CDB-452E-63CDED52A2C9 disconnected, not authorised.
+1757424721: New connection from 172.18.0.4:52288 on port 1883.
+1757424721: Client auto-5A3A56F3-500B-A72F-CEE1-F8FA7A8B4EF2 disconnected, not authorised.
+1757424781: New connection from 172.18.0.4:33460 on port 1883.
+1757424781: Client auto-E2527085-FFD4-EA76-9BFC-064F3E83F0E0 disconnected, not authorised.
+1757424811: mosquitto version 2.0.20 terminating
+1757424811: Saving in-memory database to /mosquitto/data/mosquitto.data/mosquitto.db.
+1757424811: Error saving in-memory database, unable to open /mosquitto/data/mosquitto.data/mosquitto.db.new for writing.
+1757424811: Error: No such file or directory.
+1757424838: mosquitto version 2.0.20 starting
+1757424838: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424838: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424838: Error opening password file "/mosquitto/config/passwordfile".
+1757424839: mosquitto version 2.0.20 starting
+1757424839: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424839: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424839: Error opening password file "/mosquitto/config/passwordfile".
+1757424840: mosquitto version 2.0.20 starting
+1757424840: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424840: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424840: Error opening password file "/mosquitto/config/passwordfile".
+1757424842: mosquitto version 2.0.20 starting
+1757424842: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424842: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424842: Error opening password file "/mosquitto/config/passwordfile".
+1757424843: mosquitto version 2.0.20 starting
+1757424843: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424843: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424843: Error opening password file "/mosquitto/config/passwordfile".
+1757424845: mosquitto version 2.0.20 starting
+1757424845: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424845: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424845: Error opening password file "/mosquitto/config/passwordfile".
+1757424849: mosquitto version 2.0.20 starting
+1757424849: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424849: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424849: Error opening password file "/mosquitto/config/passwordfile".
+1757424856: mosquitto version 2.0.20 starting
+1757424856: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424856: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424856: Error opening password file "/mosquitto/config/passwordfile".
+1757424869: mosquitto version 2.0.20 starting
+1757424869: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424869: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424869: Error opening password file "/mosquitto/config/passwordfile".
+1757424895: mosquitto version 2.0.20 starting
+1757424895: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424895: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424895: Error opening password file "/mosquitto/config/passwordfile".
+1757424936: mosquitto version 2.0.20 starting
+1757424936: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424936: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424936: Error opening password file "/mosquitto/config/passwordfile".
+1757424938: mosquitto version 2.0.20 starting
+1757424938: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424938: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424938: Error opening password file "/mosquitto/config/passwordfile".
+1757424939: mosquitto version 2.0.20 starting
+1757424939: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424939: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424939: Error opening password file "/mosquitto/config/passwordfile".
+1757424940: mosquitto version 2.0.20 starting
+1757424940: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424940: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424940: Error opening password file "/mosquitto/config/passwordfile".
+1757424942: mosquitto version 2.0.20 starting
+1757424942: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424942: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424942: Error opening password file "/mosquitto/config/passwordfile".
+1757424944: mosquitto version 2.0.20 starting
+1757424944: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424944: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424944: Error opening password file "/mosquitto/config/passwordfile".
+1757424948: mosquitto version 2.0.20 starting
+1757424948: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424948: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424948: Error opening password file "/mosquitto/config/passwordfile".
+1757424955: mosquitto version 2.0.20 starting
+1757424955: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424955: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424955: Error opening password file "/mosquitto/config/passwordfile".
+1757424968: mosquitto version 2.0.20 starting
+1757424968: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424968: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424968: Error opening password file "/mosquitto/config/passwordfile".
+1757424995: mosquitto version 2.0.20 starting
+1757424995: Config loaded from /mosquitto/config/mosquitto.conf.
+1757424995: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757424995: Error opening password file "/mosquitto/config/passwordfile".
+1757425046: mosquitto version 2.0.20 starting
+1757425046: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425046: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757425046: Error opening password file "/mosquitto/config/passwordfile".
+1757425079: mosquitto version 2.0.20 starting
+1757425079: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425079: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757425079: Error opening password file "/mosquitto/config/passwordfile".
+1757425081: mosquitto version 2.0.20 starting
+1757425081: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425081: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757425081: Error opening password file "/mosquitto/config/passwordfile".
+1757425082: mosquitto version 2.0.20 starting
+1757425082: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425082: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757425082: Error opening password file "/mosquitto/config/passwordfile".
+1757425083: mosquitto version 2.0.20 starting
+1757425083: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425083: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757425083: Error opening password file "/mosquitto/config/passwordfile".
+1757425085: mosquitto version 2.0.20 starting
+1757425085: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425085: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757425085: Error opening password file "/mosquitto/config/passwordfile".
+1757425087: mosquitto version 2.0.20 starting
+1757425087: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425087: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757425087: Error opening password file "/mosquitto/config/passwordfile".
+1757425091: mosquitto version 2.0.20 starting
+1757425091: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425091: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757425091: Error opening password file "/mosquitto/config/passwordfile".
+1757425098: mosquitto version 2.0.20 starting
+1757425098: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425098: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757425098: Error opening password file "/mosquitto/config/passwordfile".
+1757425111: mosquitto version 2.0.20 starting
+1757425111: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425111: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757425111: Error opening password file "/mosquitto/config/passwordfile".
+1757425142: mosquitto version 2.0.20 starting
+1757425142: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425142: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757425142: Error opening password file "/mosquitto/config/passwordfile".
+1757425144: mosquitto version 2.0.20 starting
+1757425144: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425144: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757425144: Error opening password file "/mosquitto/config/passwordfile".
+1757425145: mosquitto version 2.0.20 starting
+1757425145: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425145: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757425145: Error opening password file "/mosquitto/config/passwordfile".
+1757425146: mosquitto version 2.0.20 starting
+1757425146: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425146: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757425146: Error opening password file "/mosquitto/config/passwordfile".
+1757425148: mosquitto version 2.0.20 starting
+1757425148: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425148: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757425148: Error opening password file "/mosquitto/config/passwordfile".
+1757425150: mosquitto version 2.0.20 starting
+1757425150: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425150: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757425150: Error opening password file "/mosquitto/config/passwordfile".
+1757425154: mosquitto version 2.0.20 starting
+1757425154: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425154: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757425154: Error opening password file "/mosquitto/config/passwordfile".
+1757425161: mosquitto version 2.0.20 starting
+1757425161: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425161: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757425161: Error opening password file "/mosquitto/config/passwordfile".
+1757425174: mosquitto version 2.0.20 starting
+1757425174: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425174: Error: Unable to open pwfile "/mosquitto/config/passwordfile".
+1757425174: Error opening password file "/mosquitto/config/passwordfile".
+1757425180: mosquitto version 2.0.20 starting
+1757425180: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425180: Warning: File /mosquitto/config/aclfile has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/aclfile`.
+1757425180: Opening ipv4 listen socket on port 1883.
+1757425180: Opening ipv6 listen socket on port 1883.
+1757425180: Opening ipv4 listen socket on port 8883.
+1757425180: Opening ipv6 listen socket on port 8883.
+1757425180: mosquitto version 2.0.20 running
+1757425195: mosquitto version 2.0.20 terminating
+1757425195: Saving in-memory database to /mosquitto/data/mosquitto.data/mosquitto.db.
+1757425195: Error saving in-memory database, unable to open /mosquitto/data/mosquitto.data/mosquitto.db.new for writing.
+1757425195: Error: No such file or directory.
+1757425200: mosquitto version 2.0.20 starting
+1757425200: Config loaded from /mosquitto/config/mosquitto.conf.
+1757425200: Warning: File /mosquitto/config/aclfile has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/aclfile`.
+1757425200: Opening ipv4 listen socket on port 1883.
+1757425200: Opening ipv6 listen socket on port 1883.
+1757425200: Opening ipv4 listen socket on port 8883.
+1757425200: Opening ipv6 listen socket on port 8883.
+1757425200: mosquitto version 2.0.20 running
+1757425200: New connection from 172.18.0.3:50666 on port 8883.
+1757425201: New client connected from 172.18.0.3:50666 as auto-06CB1A12-9249-AD6A-2AC4-D7BAB3FFD29C (p2, c1, k60, u'oi').
+1757425203: New connection from 172.18.0.4:34841 on port 1883.
+1757425203: New client connected from 172.18.0.4:34841 as auto-82E37A6B-67A0-EF2A-925A-DF79CECD6E9A (p2, c1, k30, u'oi').
+1757425205: New connection from 192.168.163.1:38002 on port 1883.
+1757425205: New client connected from 192.168.163.1:38002 as mqtt-explorer-c06c1f27 (p2, c1, k60, u'oi').
+1757427001: Saving in-memory database to /mosquitto/data/mosquitto.data/mosquitto.db.
+1757427001: Error saving in-memory database, unable to open /mosquitto/data/mosquitto.data/mosquitto.db.new for writing.
+1757427001: Error: No such file or directory.
+1757428285: Client auto-06CB1A12-9249-AD6A-2AC4-D7BAB3FFD29C has exceeded timeout, disconnecting.
+1757428285: Client mqtt-explorer-c06c1f27 has exceeded timeout, disconnecting.
+1757428286: New connection from 172.18.0.3:34800 on port 8883.
+1757428286: New client connected from 172.18.0.3:34800 as auto-6FB5C20C-2206-B790-9996-45612E5A24A2 (p2, c1, k60, u'oi').
+1757442193: Saving in-memory database to /mosquitto/data/mosquitto.data/mosquitto.db.
+1757442193: Error saving in-memory database, unable to open /mosquitto/data/mosquitto.data/mosquitto.db.new for writing.
+1757442193: Error: No such file or directory.
+1757442193: Client auto-82E37A6B-67A0-EF2A-925A-DF79CECD6E9A has exceeded timeout, disconnecting.
+1757442193: Client auto-6FB5C20C-2206-B790-9996-45612E5A24A2 has exceeded timeout, disconnecting.
+1757442194: New connection from 172.18.0.3:60130 on port 8883.
+1757442194: New client connected from 172.18.0.3:60130 as auto-00DD8392-168B-4A0E-8D80-16EADFC0B200 (p2, c1, k60, u'oi').
+1757442256: New connection from 172.18.0.4:34385 on port 1883.
+1757442256: New client connected from 172.18.0.4:34385 as auto-CB64C6C2-0CD2-C928-4CFC-F92E8E096FE5 (p2, c1, k30, u'oi').
+1757442528: Client auto-00DD8392-168B-4A0E-8D80-16EADFC0B200 has exceeded timeout, disconnecting.
+1757442529: New connection from 172.18.0.3:59296 on port 8883.
+1757442529: New client connected from 172.18.0.3:59296 as auto-4BE120EF-1EE3-1DB9-EE80-EE099B6C68BB (p2, c1, k60, u'oi').
+1757442797: mosquitto version 2.0.20 starting
+1757442797: Config loaded from /mosquitto/config/mosquitto.conf.
+1757442797: Warning: File /mosquitto/config/aclfile has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/aclfile`.
+1757442797: Opening ipv4 listen socket on port 1883.
+1757442797: Opening ipv6 listen socket on port 1883.
+1757442797: Opening ipv4 listen socket on port 8883.
+1757442797: Opening ipv6 listen socket on port 8883.
+1757442797: mosquitto version 2.0.20 running
+1757442798: New connection from 172.18.0.2:38991 on port 1883.
+1757442798: New client connected from 172.18.0.2:38991 as auto-C3DE3095-F5FC-489E-2339-324103A69948 (p2, c1, k30, u'oi').
+1757442798: New connection from 172.18.0.4:37556 on port 8883.
+1757442798: New client connected from 172.18.0.4:37556 as auto-A70A7279-CF23-E88A-DD43-7BB912C0E3FF (p2, c1, k60, u'oi').
+1757443031: New connection from 192.168.163.1:49817 on port 1883.
+1757443031: New client connected from 192.168.163.1:49817 as mqtt-explorer-1e2bf18b (p2, c1, k60, u'oi').
