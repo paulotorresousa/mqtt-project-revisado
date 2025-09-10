@@ -64,7 +64,7 @@ TLS configurado no mosquitto.conf para conexões seguras na porta 8883.
 
 1. Criar diretórios
 
-mkdir -p mosquitto/{config,data,log,certs}
+mkdir -p mosquitto/{config,mosquito.data,mosquitto.log,certs}
 
 2. Gerar certificados TLS
 
@@ -86,9 +86,9 @@ openssl x509 -req -in server.csr -CA ca.crt -CAkey ca.key \
 
 3. Criar usuário no broker
 
-mosquitto_passwd -c mosquitto/config/mosquitto.passwd USUARIO
+mosquitto_passwd -c mosquitto/config/mosquitto.passwordfile USUARIO
 
-4. Definir ACL (mosquitto/config/mosquitto.acl)
+4. Definir ACL (mosquitto/config/aclfile)
 
 user USUARIO
 topic readwrite sensor/#
