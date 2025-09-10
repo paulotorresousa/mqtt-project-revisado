@@ -28,13 +28,13 @@ Configurado allow_anonymous false no mosquitto.conf.
 
 2. Criação de usuários e senhas
 
-Usuário USUARIO adicionado em mosquitto.passwd (hash seguro).
+Usuário USUARIO adicionado em passwordfile (hash seguro).
 
 
 
 3. Configuração de ACL (Access Control List)
 
-mosquitto.acl configurado para restringir permissões.
+aclfile configurado para restringir permissões.
 
 Exemplo: apenas USUARIO pode publicar/assinar no tópico sensor/#.
 
@@ -64,7 +64,7 @@ TLS configurado no mosquitto.conf para conexões seguras na porta 8883.
 
 1. Criar diretórios
 
-mkdir -p mosquitto/{config,mosquito.data,mosquitto.log,certs}
+mkdir -p mosquitto/{config,data,log,certs}
 
 2. Gerar certificados TLS
 
