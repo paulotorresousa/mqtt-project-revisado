@@ -1,40 +1,140 @@
-# 🛰️ Projeto MQTT Revisado
-📌 Descrição
+# Projeto MQTT – Segurança e Correção de Vulnerabilidades
 
-Este projeto demonstra uma arquitetura de comunicação MQTT segura, composta por:
-
-Broker MQTT: Eclipse Mosquitto 2.0.20, configurado com TLS, controle de acesso (ACL) e autenticação via password_file.
-
-Sensor de Temperatura: Implementado em Python 3.12 com Paho MQTT, publicando dados de temperatura a cada 5 segundos.
-
-Subscriber MQTT: Utiliza mosquitto_sub ou scripts personalizados para assinar tópicos e visualizar as mensagens recebidas.
-
-O projeto é executado via Docker Compose, simplificando o setup e o deploy.
+Este projeto tem como objetivo explorar e corrigir vulnerabilidades em um broker MQTT (Mosquitto), aplicando boas práticas de autenticação, controle de acesso e criptografia TLS.
 
 
-# ⚙️ Como Executar
-1. Clonar o repositório
-git clone https://github.com/paulotorresousa/mqtt-project-revisado.git
-cd mqtt-project-revisado
+---
 
-2. Iniciar os containers
+
+# 🔎 Vulnerabilidades Identificadas
+
+Acesso anônimo habilitado → Permitindo conexões sem autenticação.
+
+Ausência de autenticação de usuário → Nenhum controle de acesso configurado.
+
+Falta de criptografia TLS → Comunicação vulnerável a interceptação.
+
+
+
+---
+
+# ✅ Correções Implementadas
+
+1. Bloqueio de conexões anônimas
+
+Configurado allow_anonymous false no mosquitto.conf.
+
+
+
+2. Criação de usuários e senhas
+
+Usuário USUARIO adicionado em mosquitto.passwd (hash seguro).
+
+
+
+3. Configuração de ACL (Access Control List)
+
+mosquitto.acl configurado para restringir permissões.
+
+Exemplo: apenas USUARIO pode publicar/assinar no tópico sensor/#.
+
+
+
+4. Habilitação de TLS
+
+Certificados e chaves gerados (server.crt, server.key, ca.crt).
+
+TLS configurado no mosquitto.conf para conexões seguras na porta 8883.
+
+
+
+5. Segregação de portas
+
+1883 → comunicação interna (sem TLS, apenas testes/sensores locais).
+
+8883 → comunicação externa (TLS + autenticação).
+
+
+
+
+
+---
+
+# ⚙️ Passo a Passo de Configuração
+
+1. Criar diretórios
+
+mkdir -p mosquitto/{config,data,log,certs}
+
+2. Gerar certificados TLS
+
+cd mosquitto/certs
+
+# CA
+openssl genrsa -out ca.key 4096
+openssl req -x509 -new -nodes -key ca.key -sha256 -days 3650 \
+  -subj "/CN=MyTestCA" -out ca.crt
+
+# Servidor
+openssl genrsa -out server.key 4096
+openssl req -new -key server.key -subj "/CN=mqtt-broker" -out server.csr
+openssl x509 -req -in server.csr -CA ca.crt -CAkey ca.key \
+  -CAcreateserial -out server.crt -days 365 -sha256
+
+3. Criar usuário no broker
+
+mosquitto_passwd -c mosquitto/config/mosquitto.passwd USUARIO
+
+4. Definir ACL (mosquitto/config/mosquitto.acl)
+
+user USUARIO
+topic readwrite sensor/#
+
+5. Subir o broker com Docker Compose
+
 docker compose up -d --build
 
-3. Visualizar logs do subscriber
-docker compose logs -f mqtt-subscriber
+
+---
+
+# 🧪 Testes
+
+Publicar mensagem (porta 1883 – sem TLS):
+
+mosquitto_pub -h localhost -p 1883 -t 'sensor/temperature' -m '27.5'
+
+Assinar tópico (porta 8883 – com TLS):
+
+mosquitto_sub -h localhost -p 8883 --cafile ./mosquitto/certs/ca.crt \
+  -t 'sensor/#' -v --tls-version tlsv1.2 -u USUARIO -P <SENHA>
 
 
-Para a comunicação segura, o subscriber devem usar o certificado TLS do broker e fornecer usuário/senha válidos.
+---
 
-# 🔐 Segurança
+# 📌 Resumo das alterações
 
-Autenticação: Apenas clientes com credenciais válidas no password_file podem se conectar ao broker.
+Acesso anônimo desabilitado.
 
-Controle de acesso (ACL): Cada usuário tem permissões específicas para publicar/assinar tópicos.
+Usuário USUARIO criado com autenticação por senha.
 
-TLS/SSL: Toda comunicação entre clientes e broker é criptografada, garantindo segurança de dados em trânsito.
+ACLs implementadas para controle de permissões.
 
-Sem acesso anônimo: allow_anonymous está desativado.
+TLS configurado para proteger comunicação externa.
 
-Essas medidas tornam o broker seguro para testes avançados ou pequenos ambientes de produção.
+Portas segregadas:
+
+1883 → uso interno/testes.
+
+8883 → uso externo seguro.
+
+
+
+
+---
+
+Este projeto demonstra como corrigir falhas comuns de segurança em brokers MQTT, garantindo confidencialidade, autenticação e controle de acesso de forma prática e funcional.
+
+
+
+
 
